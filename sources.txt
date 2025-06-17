@@ -1,0 +1,17 @@
+src/main/java/fr/inventory/utils/DatabaseUtils.java
+src/main/java/fr/inventory/Main.java
+src/main/java/fr/inventory/service/ProductService.java
+src/main/java/fr/inventory/service/TransactionService.java
+src/main/java/fr/inventory/model/Product.java
+src/main/java/fr/inventory/model/TransactionType.java
+src/main/java/fr/inventory/model/Transaction.java
+src/main/java/fr/inventory/dao/TransactionDAOImpl.java
+src/main/java/fr/inventory/dao/ProductDAO.java
+src/main/java/fr/inventory/dao/ProductDAOImpl.java
+src/main/java/fr/inventory/dao/TransactionDAO.java
+src/main/java/fr/inventory/controller/DashboardController.java
+src/main/java/fr/inventory/controller/MainController.java
+src/main/java/fr/inventory/controller/ProductController.java
+src/main/java/fr/inventory/controller/TransactionController.java
+src/main/java/fr/inventory/controller/BlockchainController.java
+src/main/java/fr/inventory/blockchain/BlockchainService.java

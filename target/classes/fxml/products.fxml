@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.inventory.controller.ProductController">
+   <children>
+      <!-- Header -->
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+         <children>
+            <Label styleClass="page-title" text="📦 Gestion des Produits" />
+            <Region HBox.hgrow="ALWAYS" />
+            <CheckBox fx:id="chkShowInactive" onAction="#toggleShowInactive" text="Afficher inactifs" />
+         </children>
+      </HBox>
+      
+      <!-- Search and Actions -->
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+         <children>
+            <Label text="Recherche:" />
+            <TextField fx:id="txtSearch" prefWidth="300.0" promptText="Rechercher par nom..." />
+            <Region HBox.hgrow="ALWAYS" />
+            <Button fx:id="btnAdd" onAction="#addProduct" styleClass="primary-button" text="➕ Ajouter" />
+            <Button fx:id="btnEdit" onAction="#editProduct" styleClass="secondary-button" text="✏️ Modifier" />
+            <Button fx:id="btnDeactivate" onAction="#deactivateProduct" styleClass="warning-button" text="⏸️ Désactiver" />
+            <Button fx:id="btnActivate" onAction="#activateProduct" styleClass="success-button" text="▶️ Activer" />
+            <Button fx:id="btnDelete" onAction="#deleteProduct" styleClass="danger-button" text="🗑️ Supprimer" />
+         </children>
+      </HBox>
+      
+      <!-- Products Table -->
+      <TableView fx:id="tableProducts" VBox.vgrow="ALWAYS">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="50.0" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="200.0" text="Nom" />
+            <TableColumn fx:id="colDescription" prefWidth="250.0" text="Description" />
+            <TableColumn fx:id="colCurrentStock" prefWidth="100.0" text="Stock Actuel" />
+            <TableColumn fx:id="colMinStock" prefWidth="100.0" text="Stock Min" />
+            <TableColumn fx:id="colPrice" prefWidth="100.0" text="Prix" />
+            <TableColumn fx:id="colActive" prefWidth="80.0" text="État" />
+            <TableColumn fx:id="colCreatedAt" prefWidth="120.0" text="Créé le" />
+        </columns>
+      </TableView>
+      
+      <!-- Status Bar -->
+      <HBox alignment="CENTER_LEFT" spacing="10.0" styleClass="status-bar">
+         <children>
+            <Label text="💡 Astuce: Double-cliquez sur une ligne pour modifier rapidement" />
+            <Region HBox.hgrow="ALWAYS" />
+            <Label text="Les produits avec un stock faible sont mis en évidence" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>
