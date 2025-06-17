@@ -283,4 +283,4 @@ Pour toute question ou problème :
 
 ---
 
-**Développé avec ❤️ en Java et JavaFX**
+**Développé par dezy et xtrkh en Java et JavaFX**
