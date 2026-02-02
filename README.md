@@ -225,7 +225,7 @@ mvn test
 - Tests d'intégration des services
 - Tests de validation des modèles
 - Tests de connexion blockchain
-## 📝 License
+## License
 
 Ce projet est développé dans un cadre éducatif. Tous droits réservés.
 
