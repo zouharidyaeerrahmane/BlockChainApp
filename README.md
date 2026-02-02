@@ -1,10 +1,10 @@
 # Système de Gestion d'Inventaire avec Blockchain
 
-## 📋 Description
+## Description
 
 Application JavaFX de gestion d'inventaire intégrée avec la technologie blockchain. Ce projet implémente une architecture DAO-Service-Controller avec une interface utilisateur moderne et une intégration blockchain via Ganache et Web3j.
 
-## 🏗️ Architecture
+## Architecture
 
 ### Structure du Projet
 ```
@@ -48,7 +48,7 @@ src/main/java/fr/inventory/
 - **Ganache** - Blockchain Ethereum locale
 - **Solidity** - Smart contracts
 
-## 🚀 Installation et Configuration
+## Installation et Configuration
 
 ### Prérequis
 - Java 21 ou supérieur
@@ -59,8 +59,8 @@ src/main/java/fr/inventory/
 
 1. **Cloner le projet**
 ```bash
-git clone <repository-url>
-cd inventory-blockchain-app
+git clone https://github.com/zouharidyaeerrahmane/BlockChainApp.git
+cd BlockChainApp
 ```
 
 2. **Installer les dépendances**
@@ -84,7 +84,7 @@ mvn web3j:generate-sources
 mvn javafx:run
 ```
 
-## 📱 Utilisation
+## Utilisation
 
 ### 1. Démarrage
 - Lancez Ganache en premier
@@ -115,37 +115,37 @@ mvn javafx:run
 - Suivez les transactions récentes
 - Gérez les alertes système
 
-## 🔧 Fonctionnalités
+##  Fonctionnalités
 
 ### Gestion des Produits
-- ✅ CRUD complet (Create, Read, Update, Delete)
-- ✅ Recherche et filtrage
-- ✅ Gestion des stocks avec alertes de stock faible
-- ✅ Activation/désactivation des produits
-- ✅ Validation des données
+-  CRUD complet
+-  Recherche et filtrage
+-  Gestion des stocks avec alertes de stock faible
+-  Activation/désactivation des produits
+-  Validation des données
 
 ### Gestion des Transactions
-- ✅ Enregistrement des mouvements de stock (IN/OUT/TRANSFER)
-- ✅ Traçabilité complète avec horodatage
-- ✅ Synchronisation automatique avec la blockchain
-- ✅ Vérification des transactions sur la blockchain
-- ✅ Filtrage avancé
+-  Enregistrement des mouvements de stock (IN/OUT/TRANSFER)
+-  Traçabilité complète avec horodatage
+-  Synchronisation automatique avec la blockchain
+-  Vérification des transactions sur la blockchain
+-  Filtrage avancé
 
 ### Intégration Blockchain
-- ✅ Connexion à Ganache
-- ✅ Déploiement automatique des smart contracts
-- ✅ Synchronisation des données
-- ✅ Vérification de l'intégrité
-- ✅ Gestion des comptes Ethereum
+-  Connexion à Ganache
+-  Déploiement automatique des smart contracts
+-  Synchronisation des données
+-  Vérification de l'intégrité
+-  Gestion des comptes Ethereum
 
 ### Interface Utilisateur
-- ✅ Design moderne et intuitif
-- ✅ Navigation par onglets
-- ✅ Tableaux de données interactifs
-- ✅ Indicateurs visuels de statut
-- ✅ Responsive design
+-  Design moderne et intuitif
+-  Navigation par onglets
+-  Tableaux de données interactifs
+-  Indicateurs visuels de statut
+-  Responsive design
 
-## 🗂️ Base de Données
+## Base de Données
 
 ### Structure
 ```sql
@@ -205,7 +205,7 @@ contract InventoryContract {
 - `TransactionRecorded` - Émis lors de l'enregistrement d'une transaction
 - `StockUpdated` - Émis lors de la mise à jour du stock
 
-## 🔒 Sécurité
+## Sécurité
 
 - **Authentification** : Gestion des comptes Ethereum
 - **Autorisation** : Contrôle d'accès via modifier `onlyOwner`
@@ -213,7 +213,7 @@ contract InventoryContract {
 - **Intégrité** : Toutes les transactions sont immuables sur la blockchain
 - **Traçabilité** : Historique complet et vérifiable
 
-## 🧪 Tests
+##  Tests
 
 ### Lancer les Tests
 ```bash
@@ -225,62 +225,11 @@ mvn test
 - Tests d'intégration des services
 - Tests de validation des modèles
 - Tests de connexion blockchain
-
-## 📊 Rapports (En Développement)
-
-La section rapports est prévue pour inclure :
-- Graphiques d'évolution des stocks
-- Analyses des tendances
-- Exports PDF/Excel
-- Tableaux de bord personnalisables
-
-## 🤝 Contribution
-
-### Structure des Commits
-```
-type(scope): description
-
-- feat: nouvelle fonctionnalité
-- fix: correction de bug
-- docs: documentation
-- style: formatage
-- refactor: refactorisation
-- test: tests
-```
-
-### Développement Local
-1. Fork le projet
-2. Créer une branche feature (`git checkout -b feature/nouvelle-fonctionnalite`)
-3. Commit les changements (`git commit -am 'Ajouter nouvelle fonctionnalité'`)
-4. Push vers la branche (`git push origin feature/nouvelle-fonctionnalite`)
-5. Créer une Pull Request
-
 ## 📝 License
 
 Ce projet est développé dans un cadre éducatif. Tous droits réservés.
 
-## 📞 Support
-
-Pour toute question ou problème :
-1. Vérifiez que Ganache fonctionne sur le port 7545
-2. Consultez les logs dans la console
-3. Vérifiez les prérequis système
-4. Redémarrez l'application si nécessaire
-
-## 🎯 Roadmap
-
-### Version 1.1 (Prévue)
-- [ ] Rapports avancés avec graphiques
-- [ ] Export des données
-- [ ] Multi-utilisateurs
-- [ ] API REST
-
-### Version 1.2 (Prévue)  
-- [ ] Intégration avec d'autres blockchains
-- [ ] Interface mobile
-- [ ] Notifications en temps réel
-- [ ] Audit trail avancé
-
+**Développé par dezy et xtrkh en Java et JavaFX**
 ---
 
-**Développé par dezy et xtrkh en Java et JavaFX**
+**© 2025 Zouhari Dyae Errahmane - All rights reserved**
